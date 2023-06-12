@@ -41,15 +41,15 @@ This repository contains a Web App for the PetDesk assignment built with ASP.NET
   - **[GET] `/appointment/api/appointment/{id}`** Returns a single appointment with the matching appointment id key.
   - **[POST] `/appointment/api/appointment/{id}`** Saves changes to an appointment with matching appointment id key. Returns the saved appointment object.
 - Three class models `AppointmentModel`, `ClientModel` and `PatientModel` represent the domain data.
-- The `AppointmentService` to access the data from the storage source with Interface implimentation.
+- The `AppointmentService` to access the data from the storage source with `IAppointmentService` interface implimentation.
 
 #### Frontend
 
 - **Pages:**
-  - **Dashboard home** ../
+  - **Dashboard home** `../`
     - Table with all appointments
     - Action buttons to view details, confirm and reschedule appointments
-  - **Appointment details** ../appointment/:id
+  - **Appointment details** `../appointment/:id`
     - Details of a single appointment
     - Action buttons to confirm and reschedule appointments
 - **Key Components:**
