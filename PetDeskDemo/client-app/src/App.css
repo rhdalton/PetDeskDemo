@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+}
+
+.table th, .title-text {
+  font-weight: 500;
+  font-size: .875rem;
+  text-transform: uppercase;
+}
+.table tr.accepted td {
+  background-color: #dffcd7;
+}
+.table tr.reschedule td {
+  background-color: #fff9c2;
+}
+.table tr.accepted td span, .confirmed {
+  color: #277a10;
+  font-weight: 500;
+}
+.table tr.reschedule td span, .requested {
+  color: #998b05;
+  font-weight: 500;
+}
+
+.table td {
+  vertical-align: middle !important;
+}
+.appt-actions > div {
+  display: inline-block;
+}
