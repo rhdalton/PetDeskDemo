@@ -73,7 +73,7 @@ class AppointmentDetails extends Component<any, IState> {
       <div>
         <div className="row gx-0">
           <div className="col-sm-4 details-title title-text my-2">
-            USER:
+            CLIENT:
           </div>
           <div className="col-sm-8 details-content my-2">
             <div>{this.state.appointment.user.firstName} {this.state.appointment.user.lastName}</div>
@@ -83,7 +83,7 @@ class AppointmentDetails extends Component<any, IState> {
         </div>
         <div className="row gx-0">
           <div className="col-sm-4 details-title title-text my-2">
-            PET:
+            PATIENT:
           </div>
           <div className="col-sm-8 details-content my-2">
             <div>{this.state.appointment.animal.firstName}</div>
