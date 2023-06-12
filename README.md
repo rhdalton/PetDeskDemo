@@ -9,7 +9,7 @@ This repository contains a Web App for the PetDesk assignment built with ASP.NET
 ### Prerequsites
 
 - Visual Studio
-- Node.js  (This app has been tested with Node version 16.13.1 or higher installed. You can check your version with `node -v`)
+- Node.js  (This app has been tested with Node version 16.13.1 and higher. Check your version with `node -v`)
 
 ### Installation Steps
 - Open Visual Studio and Clone the repository https://github.com/rhdalton/PetDeskDemo.git
@@ -33,9 +33,9 @@ This repository contains a Web App for the PetDesk assignment built with ASP.NET
 - Confirm an appointment date.
 - Reschedule a requested appointment date by selecting a new date & time.
 
-### Functionality
+## Functionality
 
-#### Backend
+### Backend
 - The `AppointmentController.cs` contains three endpoints:
   - **[GET] `/appointment/api/allappointments`** Returns all appointments from the storage service.
   - **[GET] `/appointment/api/appointment/{id}`** Returns a single appointment with the matching appointment id key.
@@ -43,13 +43,13 @@ This repository contains a Web App for the PetDesk assignment built with ASP.NET
 - Three class models `AppointmentModel`, `ClientModel` and `PatientModel` represent the domain data.
 - The `AppointmentService` to access the data from the storage source with `IAppointmentService` interface implimentation.
 
-#### Frontend
+### Frontend
 
 - **Pages:**
-  - **Dashboard home** `../`
+  - **Dashboard home** `./`
     - Table with all appointments
     - Action buttons to view details, confirm and reschedule appointments
-  - **Appointment details** `../appointment/:id`
+  - **Appointment details** `./appointment/:id`
     - Details of a single appointment
     - Action buttons to confirm and reschedule appointments
 - **Key Components:**
@@ -57,5 +57,5 @@ This repository contains a Web App for the PetDesk assignment built with ASP.NET
   - **AppointmentsList** `/appointments.tsx` - Renders the list of appointments
   - **AppointmentDetails** `/appointmentdetails.tsx` - Renders details of a single appointment
   - **ConfirmAppointmentButton** `/confirmBtn.tsx` - Renders the Confirm appointment button on *AppointmentsList* and *AppointmentDetails*
-  - **RescheduleDatePicker** `/rescheduleBtn.tsx` - Renders the Reschedule appointment button on AppointmentsList* and *AppointmentDetails*
+  - **RescheduleDatePicker** `/rescheduleBtn.tsx` - Renders the Reschedule appointment button on *AppointmentsList* and *AppointmentDetails*
   - **AppointmentService** `/appointment.service.tsx` Contains the fetch requests that consume the API endpoints from backend
