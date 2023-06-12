@@ -25,6 +25,9 @@
 .table td {
   vertical-align: middle !important;
 }
+
 .appt-actions > div {
   display: inline-block;
 }
+
+.sm { font-size: .85em; }

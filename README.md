@@ -9,7 +9,7 @@ This repository contains a Web App for the PetDesk assignment built with ASP.NET
 ### Prerequsites
 
 - Visual Studio
-- Node.js  (This app has been tested with Node version 16.13.1 and higher. Check your version with `node -v`)
+- Node.js (This app has been tested with Node version 16.13.1 and higher. Check your version with `node -v`)
 
 ### Installation Steps
 - Open Visual Studio and Clone the repository https://github.com/rhdalton/PetDeskDemo.git

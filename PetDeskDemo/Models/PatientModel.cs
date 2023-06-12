@@ -7,15 +7,8 @@
 
         public string firstName { get; set; }
 
-        public petSpecies? species { get; set; }
+        public string? species { get; set; }
 
         public string? breed { get; set; }
     }
-
-    public enum petSpecies
-    {
-        Bird,
-        Cat,
-        Dog
-    };
 }

@@ -87,8 +87,8 @@ class AppointmentsList extends Component<any, IState> {
         <table className="table">
             <thead>
             <tr>
-                <th>Name</th>
-                <th>Pet</th>
+                <th>Client</th>
+                <th>Patient</th>
                 <th>Appointment Type</th>
                 <th>Appointment Date</th>
                 <th></th>
@@ -117,7 +117,9 @@ class AppointmentsList extends Component<any, IState> {
                       ? 'reschedule' 
                       : (appointment.appointmentConfirmed) ? 'accepted' : ''}>
         <td>{appointment.user.firstName} {appointment.user.lastName}</td>
-        <td>{appointment.animal.firstName}</td>
+        <td>{appointment.animal.firstName}
+            <div className="sm">{appointment.animal.species || 'unknown'}</div>
+        </td>
         <td>{appointment.appointmentType}</td>
         <td>
           <div><span>{(appointment.rescheduledDateTimeSaved) 
