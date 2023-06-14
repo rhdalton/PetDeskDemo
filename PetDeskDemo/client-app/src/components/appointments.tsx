@@ -117,9 +117,7 @@ class AppointmentsList extends Component<any, IState> {
                       ? 'reschedule' 
                       : (appointment.appointmentConfirmed) ? 'accepted' : ''}>
         <td>{appointment.user.firstName} {appointment.user.lastName}</td>
-        <td>{appointment.animal.firstName}
-            <div className="sm">{appointment.animal.species || 'unknown'}</div>
-        </td>
+        <td>{appointment.animal.firstName}</td>
         <td>{appointment.appointmentType}</td>
         <td>
           <div><span>{(appointment.rescheduledDateTimeSaved) 
