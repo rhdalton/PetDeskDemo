@@ -22,11 +22,11 @@ This repository contains a Web App for the PetDesk assignment built with ASP.NET
       BROWSER=none
 
 ### Running the App
-- Set PetDesk Demo as your Startup project and run the solution in debug mode.
+- Set PetDesk Demo as your Startup project and run the solution in debug mode. Allow SSL certificates pop-ups that may appear.
 - A new browser window will open showing this text:
   ![](https://github.com/rhdalton/PetDeskDemo/blob/master/PetDeskDemo/client-app/src/assets/petdeskdemo1.PNG?raw=true)
   - If you get a "Your connection is not private" error on Chrome, you can allow invalid https certs on localhost by entering this in your browser: `chrome://flags/#allow-insecure-localhost`
-  Then **Enable** the option for "Allow invalid certificates for resources loaded from localhost".
+  Then **Enable** the option for "Allow invalid certificates for resources loaded from localhost" and restart the solution.
 - Once the project finishes loading, this page will automatically direct to the PetDesk demo dashboard where you will see list of appointments.
 
 ### Feature Overview
